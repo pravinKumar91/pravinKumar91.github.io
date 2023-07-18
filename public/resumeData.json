@@ -4,7 +4,7 @@
     "description":"I am a Technical Lead at HCL Technologies Ltd. I use Java, Springboot, React, Apache NiFi to develop microservices and web pages. This project is nothing but my resume in matrix theme.",
     "image":"profilepic.jpg",
     "bio":"I have total 9+ Years of working experience. Working experience in domains like Web Application Development, Application Maintenance. 7+ Years of experience in Java, REST web services. 3+ Years of experience in Springboot, JPA repositories, SQL. 2+ Years of experience in application maintenance and support. 1+ Years of experience in using react js. Experience in using Design patterns. Application production support, data migrations. Software Design, Implementation, Integration, Testing and Maintenance. Good in communication and analytical skills.",
-    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
+    "contactmessage":"Please drop a message here to connect with me. Thank you !",
     "email": "prawanare@gmail.com",
     "phone": "8149941408",
     "github":"https://github.com/pravinKumar91/react-resume",
@@ -25,7 +25,7 @@
       },
       {
         "name":"twitter",
-        "url":"http://twitter.com",
+        "url":"https://twitter.com/pr__kumar",
         "className":"fa fa-twitter"
       },
       {
@@ -46,7 +46,7 @@
     ]
   },
   "resume":{
-    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "skillmessage":"",
     "education":[
       {
         "school":"Vishwakarma Institute Of Information Technology, Pune",
@@ -109,76 +109,28 @@
   "portfolio":{
     "projects": [
       {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"01.jpg",
-        "url":"https://www.canadianwanderlust.com"
-      },
-      {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"02.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
+        "title":"Abstract",
+        "category":"Abstract",
         "image":"03.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
+        "url":""
       },
       {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
+        "title":"Abstract",
+        "category":"Abstract",
         "image":"04.jpg",
-        "url":"http://www.timbakerdev.com"
+        "url":""
       },
       {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"05.jpg",
-        "url":"http://www.smirkspace.com"
+        "title":"Abstract",
+        "category":"Abstract",
+        "image":"09.jpg",
+        "url":""
       },
       {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"06.jpg",
-        "url":"https://www.canadianwanderlust.com"
-      },
-      {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"01.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"02.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"03.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
-      },
-      {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
-        "image":"04.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"05.jpg",
-        "url":"http://www.smirkspace.com"
-      },
-      {
-        "title":"Canadian Wanderlust",
-        "category":"My Travel Blog for my post-university travels",
-        "image":"06.jpg",
-        "url":"https://www.canadianwanderlust.com"
+        "title":"Abstract",
+        "category":"Abstract",
+        "image":"10.jpg",
+        "url":""
       }
     ]
   }
