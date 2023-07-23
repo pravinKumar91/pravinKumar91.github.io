@@ -10,13 +10,17 @@ This project is realted to my bio in resume format.
 # Run Project
 ### 1. Clone the project
 
-### 2. Run the project
+### 2. Intall the node modules
 ```shell
-npm i
+npm install
+```
+
+### 3. Run the project
+```shell
 npm start
 ```
 
-### 3. Build
+### 4. Build
 ```shell
 npm run build
 ```
