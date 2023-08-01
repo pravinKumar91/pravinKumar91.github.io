@@ -1,7 +1,60 @@
 import React, { Component } from "react";
 import { Fade, Slide } from "react-reveal";
+import emailjs from '@emailjs/browser';
 
 class Contact extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      contactName: '',
+      contactEmail: '',
+      contactMessage: '',
+      contactSubject: '',
+      cStatusMessage: ''
+    };
+  }
+
+  handleChange = (event) => {
+    const { name, value } = event.target;
+    this.setState({ [name]: value });
+  };
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+
+    const { contactName, contactEmail, contactMessage, contactSubject } = this.state;
+
+    // Your emailjs template parameters
+    const templateParams = {
+      contactName: contactName,
+      contactEmail: contactEmail,
+      contactMessage: contactMessage,
+      contactSubject: contactSubject
+    };
+
+    // Replace 'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', and 'YOUR_USER_ID' with your actual emailjs credentials
+    emailjs.send('service_tim46se', 'template_tsyv1lt', templateParams, 'U0NAiIxWDCD27xYMS')
+      .then((response) => {
+        console.log('Email sent successfully:', response);
+        this.setState({ cStatusMessage: 'Your message was sent successfully!' });
+      })
+      .catch((error) => {
+        console.error('Email could not be sent:', error);
+        this.setState({ cStatusMessage: 'An error occurred. Please try again later.' });
+      });
+
+    this.setState({
+      contactName: '',
+      contactEmail: '',
+      contactMessage: '',
+      contactSubject: ''
+    });
+  };
+
+
+
   render() {
     if (!this.props.data) return null;
 
@@ -12,6 +65,8 @@ class Contact extends Component {
     const zip = this.props.data.address.zip;
     const phone = this.props.data.phone;
     const message = this.props.data.contactmessage;
+
+    const { cStatusMessage } = this.state;
 
     return (
       <section id="contact">
@@ -32,7 +87,7 @@ class Contact extends Component {
         <div className="row">
           <Slide left duration={1000}>
             <div className="eight columns">
-              <form action="" method="post" id="contactForm" name="contactForm">
+              <form action="" id="contactForm" name="contactForm" onSubmit={this.handleSubmit}>
                 <fieldset>
                   <div>
                     <label htmlFor="contactName">
@@ -83,23 +138,19 @@ class Contact extends Component {
                       rows="15"
                       id="contactMessage"
                       name="contactMessage"
+                      onChange={this.handleChange}
                     ></textarea>
                   </div>
 
                   <div>
-                    <button className="submit">Submit</button>
+                    <button className="submit" type="submit">Submit</button>
                     <span id="image-loader">
                       <img alt="" src="images/loader.gif" />
                     </span>
                   </div>
+                  <div>{cStatusMessage}</div>
                 </fieldset>
               </form>
-
-              <div id="message-warning"> Error boy</div>
-              <div id="message-success">
-                <i className="fa fa-check"></i>Your message was sent, thank you!
-                <br />
-              </div>
             </div>
           </Slide>
 
