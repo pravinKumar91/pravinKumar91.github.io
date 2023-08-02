@@ -3,7 +3,6 @@ import { Fade, Slide } from "react-reveal";
 import emailjs from '@emailjs/browser';
 
 class Contact extends Component {
-
   constructor(props) {
     super(props);
 
@@ -35,7 +34,7 @@ class Contact extends Component {
     };
 
     // Replace 'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', and 'YOUR_USER_ID' with your actual emailjs credentials
-    emailjs.send('service_tim46se', 'template_tsyv1lt', templateParams, 'U0NAiIxWDCD27xYMS')
+    emailjs.send(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, templateParams, process.env.REACT_APP_PUBLIC_ID)
       .then((response) => {
         console.log('Email sent successfully:', response);
         this.setState({ cStatusMessage: 'Your message was sent successfully!' });
